@@ -21,7 +21,7 @@
 
  (libraries                         ; OCaml Libraries we want to link
                                     ; with, your choice here.
-
+   pyml
    coq-core.vernac                  ; Needed for vernac extend.
    coq-core.plugins.ltac            ; Needed for tactic extend.
  )

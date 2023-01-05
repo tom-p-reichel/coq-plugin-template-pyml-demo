@@ -1,3 +1,5 @@
+Declare ML Module "stdcompat".
+Declare ML Module "pyml".
 Declare ML Module "my_plugin".
 
 CallC.

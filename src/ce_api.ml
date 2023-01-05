@@ -11,6 +11,7 @@ let msg_in_tactic str : unit PV.tactic =
       Feedback.msg_warning (Pp.str str)))
 
 let printHello : unit PV.tactic =
+  Py.initialize () ;
   let open PV.Notations in
-  msg_in_tactic "hello" >>= fun () ->
+  msg_in_tactic (Py.String.to_string (Py.Run.eval "\"Hello\" + \" \" + \"World!\"")) >>= fun () ->
   Tacticals.New.tclIDTAC
