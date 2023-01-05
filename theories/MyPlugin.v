@@ -1,1 +1,1 @@
-Declare ML Module "my_plugin:coq-my-plugin.plugin".
+Declare ML Module "coq-my-plugin.plugin".
